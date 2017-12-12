@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>海外直邮</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/my_style.css"/>
+    <script type="text/javascript" src="js/zepto.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm-extend.js" charset="utf-8"></script>
+      <!-- <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	$(window).load(function(){
+    		$(".loading").addClass("loader-chanage")
+    		$(".loading").fadeOut(300)
+    	})
+    </script> -->
+
+</head>
+<!--loading页开始-->
+<div class="loading">
+	<div class="loader">
+        <div class="loader-inner pacman">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+	</div>
+</div>
+<!--loading页结束-->
+<body>
+<!-- 导航开始 -->
+	<header class="bar bar-nav header_top">
+        <a class="icon icon-left pull-left open-panel header_left" href="javascript:history.go(-1)"></a>
+        <h1 class="title header_center" >登录</h1>
+    </header>
+<!-- 导航开始 -->
+<!-- 登录开始 -->
+	<div >
+        <div class="login_content">
+            <h3>欢迎登录</h3>
+            <form method="post" action="my_page.html">
+                <ul>
+                    <li><input class="allinputs" type="text" id="uname"  placeholder="用户名/邮箱/手机号" autocomplete  /><p id="uwarn"></p></li>
+                    <li><input class="allinputs" type="password" id="pwd" placeholder="请输入密码"   /><p id="pwarn"></p></li>
+                </ul>
+                <p class="clearfix"><input id="remember_pw" class="fl" type="checkbox" /><label for="remember_pw">记住密码</label><a href="register_page.html" class="fr">立即注册</a></p>
+                <input type="submit" class="login_sub " value="登 录" disabled />
+                <p class="clearfix"><a href="messige_login.html" class="fl">短信快速登录</a><a href="forget_password.html" class="fr">忘记密码?</a></p>
+            </form>
+        </div>
+    </div>
+<!--登录结束  -->
+<!-- 遮罩开始 -->
+<div class="black_cover"></div>
+<!-- 遮罩结束 -->
+<!-- 弹框开始 -->
+<div class="login_alert alert">
+    <h3>提示</h3>    
+    <P>该用户不存在或密码不正确！</P>
+    <input type="button" value="确定" class="login_confirm" />
+</div>
+<!-- 弹框结束 -->
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/login_page.js"></script>
+</body>
+</html>
