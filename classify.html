@@ -1,0 +1,986 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>海外直邮</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <script type="text/javascript" src="js/zepto.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm-extend.js" charset="utf-8"></script>
+    <style>
+    .bara{
+        font-size:.8rem;
+        line-height:.9rem;
+    }
+    </style>
+</head>
+
+
+
+
+<body>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+    <!-- <div class="page-group"> -->
+        <!-- 单个page ,第一个.page默认被展示-->
+        <!-- <div class="page"> -->
+            <!-- 标题栏 -->
+            <header class="bar bar-nav" >
+                    <a class="icon icon-left pull-left open-panel" style="color:#999" href="javascript:history.go(-1)"></a>       
+                <h1 class="title">商品分类</h1>
+         <!-- <a class="icon icon-me pull-right open-panel"></a> -->
+         <!-- <a class="icon-search fl"><img src="images/search.png"/></a> -->
+            </header>
+
+            <!-- 工具栏 -->
+            <nav class="bar bar-tab bara">
+                <a class="tab-item external active" href="index.html">
+                    <span class="icon icon-home" style="color:#929292"></span>
+                    <span class="tab-label" style="color:#929292">首页</span>
+                </a>
+                <a class="tab-item external" href="classify.html">
+                    <span class="icon icon-app" style="color:#ff5777"></span>
+                    <span class="tab-label" style="color:#ff5777">分类</span>
+                </a>
+                <a class="tab-item external" href="carts.html">
+                    <span class="icon icon-cart"></span>
+                    <span class="tab-label">购物车</span>
+                </a>
+		        <a class="tab-item external" href="my_page.html">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">我的</span>
+                </a>
+            </nav>
+
+            <!-- 这里是页面内容区 -->
+        <div class="content">
+                     <!-- 内容部份开始 -->
+            <div class="classify_cnt clearfix">
+                <div class="classify_cnt_left fl ">
+                    <ul class="lists">
+                        <li class="current">食 品</li>
+                        <li>家 居</li>
+                        <li>服 饰</li>
+                        <li>美 妆</li>
+                        <li>礼 品</li>
+                        <li>数 码</li>
+                        <li>运 动</li>
+                        <li>母 婴</li>
+                    </ul>
+                </div>
+                <!-- 食品 -->
+                <div class="classify_cnt_right fr" style="display:block;">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>休闲零食</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/jianguo.jpg"/></p></p><p>坚果</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/binggan.jpg"/></p><p>饼干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/guodong.jpg"/><p>果冻</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/shupian.jpg"/></p><p>薯片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/niurou.jpg"/></p><p>牛肉干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/jinkou.jpg"/></p><p>进口零食</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/qiaokeli.jpg"/></p><p>巧克力</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/guogan.jpg"/></p><p>果干</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>茶酒冲饮</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/niunai.jpg"/></p><p>牛奶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/kafei.jpg"/></p><p>咖啡</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/hongjiu.jpg"/></p><p>红酒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/huacao.jpg"/></p><p>花草茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/puer.jpg"/></p><p>普洱</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/hongcha.jpg"/></p><p>红茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/maipian.jpg"/></p><p>麦片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/naifen.jpg"/></p><p>奶粉</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>新鲜水果</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/pingguo.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/qiyiguo.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/chelizi.jpg"/><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/huolongguo.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/liulian.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/baixiangguo.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/niuyouguo.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/jinkoushuiguo.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>粮油干货</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/shiyongyou.jpg"/></p><p>食用油</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/mianfen.jpg"/></p><p>面粉</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/zaliang.jpg"/></p><p>杂粮</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/tiaoweipin.jpg"/></p><p>调味品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/fangbian.jpg"/></p><p>方便食品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/hongbei.jpg"/></p><p>烘焙</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/haichanganhuo.jpg"/></p><p>海产干货</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/ganhuo.jpg"/></p><p>素食干货</p></a>
+                            </dd>
+                    </dl>
+                                       
+                </div>
+
+                <!-- 家居 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>烹饪锅具</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/shaguo.jpg"/></p></p><p>砂锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/zhengguo.jpg"/></p><p>蒸锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/jianguo1.jpg"/><p>煎锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/gaoyaguo.jpg"/></p><p>高压锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/shuihu.jpg"/></p><p>水壶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/guojutaozhuang.jpg"/></p><p>锅具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/tangguo.jpg"/></p><p>汤锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/pingdiguo.jpg"/></p><p>平底锅</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>厨房配件</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/zhenban.jpg"/></p><p>砧板</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/caidao.jpg"/></p><p>菜刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/jiandao.jpg"/></p><p>剪刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/baoxianhe.jpg"/></p><p>保鲜盒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/chuwujia.jpg"/></p><p>储物架</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/hongbei1.jpg"/></p><p>烘焙</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/daoju.jpg"/></p><p>刀具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/shuiguodao.jpg"/></p><p>水果刀</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>家装软饰</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/xiangpianqiang.jpg"/></p><p>相片墙</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/zhuangshizihua.jpg"/></p><p>装饰字画</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/jieqingshipin.jpg"/><p>节庆饰品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/shizixiu.jpg"/></p><p>十字绣</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/zhuangshitie.jpg"/></p><p>装饰贴</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/huayi.jpg"/></p><p>花艺</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/zhongshi.jpg"/></p><p>钟饰</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/lianyigeduan.jpg"/></p><p>帘艺隔断</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>生活日用</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/yushiyongpin.jpg"/></p><p>浴室用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/fengrenyongpin.jpg"/></p><p>缝纫用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/jinghuachuwei.jpg"/></p><p>净化除味</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/yusan.jpg"/></p><p>雨伞雨具</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/shounaxiang.jpg"/></p><p>收纳箱</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/shounagui.jpg"/></p><p>收纳柜</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/yasuodai.jpg"/></p><p>压缩袋</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/baonuanfanghu.jpg"/></p><p>保暖防护</p></a>
+                            </dd>
+                    </dl>                                       
+                </div>
+
+                <!-- 服饰 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>男装</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>坚果</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>饼干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>果冻</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>薯片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>牛肉干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口零食</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>巧克力</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>果干</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>女装</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛奶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>咖啡</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红酒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>花草茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>普洱</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>麦片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>奶粉</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>童装</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>粮油干货</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                                       
+                </div>
+
+                <!-- 美妆 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>烹饪锅具</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>砂锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>蒸锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>煎锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>高压锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>水壶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>锅具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>汤锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>平底锅</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>厨房配件</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>砧板</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>菜刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>剪刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>保鲜盒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>储物架</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>烘焙</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>刀具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>水果刀</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>家装软饰</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>相片墙</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>装饰字画</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>节庆饰品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>十字绣</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>装饰贴</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>花艺</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>钟饰</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>帘艺隔断</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>生活日用</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>浴室用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>缝纫用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>净化除味</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>雨伞雨具</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>收纳箱</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>收纳柜</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>压缩袋</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>保暖防护</p></a>
+                            </dd>
+                    </dl>                                       
+                </div>
+
+                <!-- 礼品 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>休闲零食</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>坚果</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>饼干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>果冻</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>薯片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>牛肉干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口零食</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>巧克力</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>果干</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>茶酒冲饮</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛奶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>咖啡</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红酒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>花草茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>普洱</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>麦片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>奶粉</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>新鲜水果</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>粮油干货</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                                       
+                </div>
+
+                <!-- 数码 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>烹饪锅具</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>砂锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>蒸锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>煎锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>高压锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>水壶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>锅具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>汤锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>平底锅</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>厨房配件</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>砧板</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>菜刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>剪刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>保鲜盒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>储物架</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>烘焙</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>刀具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>水果刀</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>家装软饰</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>相片墙</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>装饰字画</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>节庆饰品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>十字绣</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>装饰贴</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>花艺</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>钟饰</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>帘艺隔断</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>生活日用</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>浴室用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>缝纫用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>净化除味</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>雨伞雨具</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>收纳箱</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>收纳柜</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>压缩袋</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>保暖防护</p></a>
+                            </dd>
+                    </dl>                                       
+                </div>
+
+                <!-- 运动 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>休闲零食</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>坚果</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>饼干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>果冻</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>薯片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>牛肉干</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口零食</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>巧克力</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>果干</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>茶酒冲饮</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛奶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>咖啡</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红酒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>花草茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>普洱</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>红茶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>麦片</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>奶粉</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>新鲜水果</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>粮油干货</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>苹果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>奇异果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>车厘子</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>火龙果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>榴莲</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>百香果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>牛油果</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>进口水果</p></a>
+                            </dd>
+                    </dl>
+                                       
+                </div>
+
+                <!-- 母婴 -->
+                <div class="classify_cnt_right fr">
+                    <dl>
+                        <dt><img src="image/icon_1.png"><span>烹饪锅具</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p></p><p>砂锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>蒸锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>煎锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>高压锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>水壶</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>锅具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>汤锅</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>平底锅</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_2.png"><span>厨房配件</span></dt>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>砧板</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>菜刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>剪刀</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>保鲜盒</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>储物架</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>烘焙</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>刀具套装</p></a>
+                        </dd>
+                        <dd>
+                            <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>水果刀</p></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="image/icon_3.png"><span>家装软饰</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>相片墙</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>装饰字画</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/><p>节庆饰品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>十字绣</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>装饰贴</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>花艺</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>钟饰</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>帘艺隔断</p></a>
+                            </dd>
+                    </dl>
+                    <dl>
+                            <dt><img src="image/icon_4.png"><span>生活日用</span></dt>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>浴室用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>缝纫用品</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>净化除味</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>雨伞雨具</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_3.jpg"/></p><p>收纳箱</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_4.jpg"/></p><p>收纳柜</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_2.jpg"/></p><p>压缩袋</p></a>
+                            </dd>
+                            <dd>
+                                <a href="classify_child.html"><p><img src="image/foods_1.jpg"/></p><p>保暖防护</p></a>
+                            </dd>
+                    </dl>                                       
+                </div> 
+            </div>
+            <!-- 内容部分结束 -->
+        </div>
+        <!-- </div>
+    </div> -->
+
+
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/help.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>海外直邮</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/sm.css">
+    <link rel="stylesheet" href="css/sm-extend.css">
+    <!-- <link rel="stylesheet" href="css/wjystyle.css"> -->
+    <script type="text/javascript" src="js/zepto.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/sm-extend.js" charset="utf-8"></script>
+  <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+      .clearfix:after{
+            content: "";
+            display:table;
+            clear:both;
+        }
+        .fl{
+            float:left;
+        }
+        .fr{
+            float:right;
+        }
+        a,span,div,li,input{
+            font-size:.6rem;
+            color: #929292;
+        }
+        p{
+            margin:0px;
+        }
+  .bara{
+      font-size:.8rem;
+      line-height:.9rem;
+  }
+  ul li{
+    list-style:none;
+    }
+    #check .input_check {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        visibility: hidden;
+    }
+    #check li {
+        position: relative;
+    }
+    #check .input_check+label {
+        display: inline-block;
+        width: 1.5rem;
+        height: 2rem;
+        background: url('image/yuanquan_down.png') no-repeat;
+        background-position: -31px -3px;
+        border: 1px solid white;
+    }
+    #check .input_check:checked+label {
+        background-position:left center;
+    }
+    .shop_info{
+    /* border-bottom:1px solid blue; */
+    position:relative;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    }
+    /* .all_check{
+    border:1px solid #ff5777;
+    } */
+	/* .cartMain{
+     border:1px solid #ff5777;
+     } */
+     .cartBox{
+         background: white;
+       
+     }
+     .cartBox1{
+        margin-top:1%;
+     }
+     .xuan1{
+         /* border:1px solid blue; */
+         width: 8%;
+         /* padding-top:2.1%; */
+         /* padding-bottom:1%; */
+         margin-left:3%;
+         width: 2rem;
+        height: 2rem;
+         background: url(image/yuanquan2.png) no-repeat left center;
+     }
+     .all_check>span{
+         /* border:1px solid yellow; */
+         display:inline-block;
+         padding-left:1.2rem;
+         /* margin-left:2%; */
+         height: 2rem;
+         line-height: 2rem;
+         background:url(image/dianming.png) no-repeat left center;
+     }
+     .xuan2{
+        margin-top: 13%;
+         width: 8%;
+     }
+    img{
+         width:25%;
+         margin-top:5%;
+         margin-left:2%;
+     }
+     .list_price p{
+        
+    line-height: 1.5rem;
+     }
+     .list_amount{
+         /* border:1px solid yellow; */
+         width:40%;
+         margin-top:5%;
+         margin-left:60%;
+     }
+     .list_amount a{
+         width:.8rem;
+         display:inline-block;
+         border:1px solid #999999;
+         height:.8rem;
+         line-height:.8rem;
+         border-radius:50%;
+         background:url(image/jian.png) no-repeat center center;
+     }
+     .list_amount a:nth-of-type(2){
+        background:url(image/jia.png) no-repeat center center;
+     }
+     .list_amount input{
+         width:1rem;
+         height:1rem;
+         line-height:1rem;
+         padding-left:8%;
+         margin-left:5%;
+         margin-right:5%;
+         border:none;
+     }
+     .jiage{
+         /* border:1px solid blue; */
+         width: 53%;
+         margin-right:3%;
+         margin-top:6%;
+     }
+     .list_price{
+         /* border:1px solid #ff5777; */
+         color:#ff5777;
+         font-size:.8rem;
+         height:0px;
+     }
+     .chicun{
+         color:#999999;
+         font-size:.5rem;
+         line-height: 1.5rem;
+     }
+     ul{
+         padding-bottom:5%;
+         border-top:1px solid #f2f2f2;
+     }
+     .bar-wrapper{
+        background: white;
+        position: fixed;
+        bottom: 2.5rem;
+        width: 100%;
+        height: 2.5rem;
+        padding-top: .2rem;
+    line-height: 2rem;
+        border-top: 1px solid #f2f2f2;
+     }
+     .bar-wrapper .bar-right div:nth-of-type(1)>span{
+         color:#ff5777;
+         width:30%;
+         display:inline-block;
+         /* border:1px solid blue; */
+     }
+    .quanxuan{
+        /* padding-top: 2.4rem; */
+    }
+    .jiesuan{
+        margin-right:4%;
+    }
+    .jiesuan .calBtn a{
+        display:inline-block;
+        /* padding:.5rem 2rem; */
+        background:#ff5777;
+        height:1.5rem;
+        width:3.2rem;
+        line-height:1.5rem;
+        color:white;
+        font-size:.6rem;
+        text-align: center;
+        border-radius:.3rem;
+    }
+    .totalMoney{
+        /* margin-right:1%; */
+        color:#ff5777;
+        padding-right:.5rem;
+        font-weight:400;
+    }
+    .total_text{
+        margin-left:.5rem;
+    }
+  #edits{
+      /* color:#ff5777; */
+      height:2.2rem;
+      line-height:2.2rem;
+  }
+  </style>
+</head>
+<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+    <div class="page-group">
+        <!-- 单个page ,第一个.page默认被展示-->
+        <div class="page">
+            <!-- 标题栏开始 -->
+            <header class="bar bar-nav bar2">
+                    <a class="icon icon-left pull-left open-panel" style="color:#999" href="javascript:history.go(-1)"></a>  
+                <h1 class="title">海外直购</h1>
+ 	        	<a class="pull-right open-panel" id="edits">编辑</a>
+            </header>
+            <!-- 标题栏结束 -->
+            <!-- 工具栏开始 -->
+            <nav class="bar bar-tab bara">
+                <a class="tab-item external" href="index.html">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="classify.html">
+                    <span class="icon icon-app"></span>
+                    <span class="tab-label">分类</span>
+                </a>
+                <a class="tab-item external " href="carts.html">
+                    <span class="icon icon-cart active" style="color:#ff5777;"></span>
+                    <span class="tab-label active" style="color:#ff5777;">购物车</span>
+                </a>
+		        <a class="tab-item external" href="my_page.html">
+                    <span class="icon icon-me"></span>
+                    <span class="tab-label">我的</span>
+                </a>
+            </nav>
+            <!-- 工具栏结束 -->
+
+            <!-- 这里是页面内容区开始 -->
+            <div class="content cartfoots conten1s">
+                <section class="cartMain bianji" id="check" style="margin-bottom: 2rem;">
+                    <div class="cartBox">
+                        <div class="shop_info">
+                            <div class="all_check clearfix">
+                                <!--店铺全选-->
+                                <div class="xuan1 fl">
+                                    <input type="checkbox" id="shop_a" class="shopChoice input_check">
+                                    <label for="shop_a" class="shop"></label>
+                                 </div>
+                                <span class="fl">日本直邮全球购</span>
+                                
+                            </div>
+                
+                        </div>
+                        <div class="order_content">
+                            <ul class="order_lists clearfix">
+                                <li class="list_chk xuan1 xuan2 fl">
+                                    
+                                    <input type="checkbox" id="checkbox_2" class="son_check input_check">
+                                    <label for="checkbox_2"></label>
+                               
+                                </li>
+                                <img src="image/modo.jpg" class="fl"/>
+                                <div class="fr jiage">
+                                <li class="xi">
+                                   夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心
+                                </li>
+                                <li class="chicun xi">
+                                        尺寸：16*16*3(cm)
+                                </li>
+                                <li class="list_price fl">
+                                    <p class="price">￥980.00</p>
+                                </li>
+                                <li class="list_amount fl">
+                                    
+                                    <div class="amount_box">
+                                        <a href="javascript:;" class="reduce reSty">&nbsp;</a>
+                                        <input type="text" value="1" class="sum">
+                                        <a href="javascript:;" class="plus">&nbsp;</a>
+                                    </div>
+                                </li>
+                                <li class="list_sum fl">
+                                    <p class="sum_price" style="display:none;">￥980.00</p>
+                                </li>
+                            </div>
+                            </ul>
+
+                            <ul class="order_lists clearfix">
+                                    <li class="list_chk xuan1 xuan2 fl">
+                                        
+                                        <input type="checkbox" id="checkbox_3" class="son_check input_check">
+                                        <label for="checkbox_3"></label>
+                                   
+                                    </li>
+                                    <img src="image/modo2.jpg" class="fl"/>
+                                    <div class="fr jiage">
+                                    <li class="xi">
+                                       夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心
+                                    </li>
+                                    <li class="chicun xi">
+                                            尺寸：16*16*3(cm)
+                                    </li>
+                                    <li class="list_price fl">
+                                        <p class="price">￥22.00</p>
+                                    </li>
+                                    <li class="list_amount fl">
+                                        
+                                        <div class="amount_box">
+                                            <a href="javascript:;" class="reduce reSty">&nbsp;</a>
+                                            <input type="text" value="1" class="sum">
+                                            <a href="javascript:;" class="plus">&nbsp;</a>
+                                        </div>
+                                    </li>
+                                    <li class="list_sum fl">
+                                        <p class="sum_price" style="display:none;">￥22.00</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cartBox cartBox1" >
+                        <div class="shop_info">
+                            <div class="all_check clearfix">
+                                <!--店铺全选-->
+                                <div class="xuan1 fl">
+                                    <input type="checkbox" id="shop_b" class="shopChoice input_check">
+                                    <label for="shop_b" class="shop"></label>
+                                 </div>
+                                <span class="fl">日本直邮全球购</span>
+                                
+                            </div>
+                
+                        </div>
+                        <div class="order_content">
+                            <ul class="order_lists clearfix">
+                                <li class="list_chk xuan1 xuan2 fl">
+                                    
+                                    <input type="checkbox" id="checkbox_4" class="son_check input_check">
+                                    <label for="checkbox_4"></label>
+                               
+                                </li>
+                                <img src="image/modo.jpg" class="fl"/>
+                                <div class="fr jiage">
+                                <li class="xi">
+                                   夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心
+                                </li>
+                                <li class="chicun xi">
+                                        尺寸：16*16*3(cm)
+                                </li>
+                                <li class="list_price fl ">
+                                    <p class="price">￥22.00</p>
+                                </li>
+                                <li class="list_amount fl">
+                                    
+                                    <div class="amount_box">
+                                        <a href="javascript:;" class="reduce reSty">&nbsp;</a>
+                                        <input type="text" value="1" class="sum">
+                                        <a href="javascript:;" class="plus">&nbsp;</a>
+                                    </div>
+                                </li>
+                                <li class="list_sum fl">
+                                    <p class="sum_price" style="display:none;">￥22.00</p>
+                                </li>
+                            </div>
+                            </ul>
+
+                            <ul class="order_lists clearfix">
+                                    <li class="list_chk xuan1 xuan2 fl">
+                                        
+                                        <input type="checkbox" id="checkbox_5" class="son_check input_check">
+                                        <label for="checkbox_5"></label>
+                                   
+                                    </li>
+                                    <img src="image/modo2.jpg" class="fl"/>
+                                    <div class="fr jiage">
+                                    <li class="xi">
+                                       夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心
+                                    </li>
+                                    <li class="chicun xi">
+                                            尺寸：16*16*3(cm)
+                                    </li>
+                                    <li class="list_price fl">
+                                        <p class="price">￥9.00</p>
+                                    </li>
+                                    <li class="list_amount fl">
+                                        
+                                        <div class="amount_box">
+                                            <a href="javascript:;" class="reduce reSty">&nbsp;</a>
+                                            <input type="text" value="1" class="sum">
+                                            <a href="javascript:;" class="plus">&nbsp;</a>
+                                        </div>
+                                    </li>
+                                    <li class="list_sum fl">
+                                        <p class="sum_price" style="display:none;">￥9.00</p>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                   
+                    <!--底部-->
+                    <div class="bar-wrapper">
+                        <div class="bar-right">
+                            <div class="xuan1 fl quanxuan">
+                                <input type="checkbox" id="all" class="whole_check input_check">
+                                <label for="all"></label>
+                            </div>
+                            <span class="fl">全选</span>
+                            <div class="fr jiesuan">
+                                <div class="piece fl" style="display:none;">已选商品<strong class="piece_num">0</strong>件</div>
+                                <div class="totalMoney fl">合计: <strong class="total_text">0.00</strong></div>
+                                <div class="calBtn fl"><a href="javascript:;" id="jiesuan">结算</a></div>
+                             </div>
+                        </div>
+                    </div>
+                </section>
+                
+           
+             <!-- 页面内容去结束 -->
+       </div>
+    </div> 
+    <script src="js/jquery.js"></script>
+    <script src="js/carts.js"></script>
+    <script>
+     $(function(){
+   
+   $("#jiesuan").click(function(){
+    window.location.href = "accounting-center.html";
+});
+$(".xi").click(function(){
+    window.location.href = "detail.html";
+});
+
+
+});
+    </script>
+</html>
