@@ -1,0 +1,126 @@
+.clearfix:after{
+            content: "";
+            display:table;
+            clear:both;
+        }
+        .fl{
+            float:left;
+        }
+        .fr{
+            float:right;
+        }
+        div,a,span{
+          font-size:.7rem;
+        }
+        .top{
+          background:white;
+          width:100%;
+        }
+        .content{
+        background:white;
+        }
+        .fenge{
+          background:#efeff4;
+          width:100%;
+          height:.5%;
+        }
+        .top1{
+          width:96%;
+          margin:0px auto;
+          height:2.5rem;
+        }
+        .top1 img{
+          /* border:1px solid #ff5777; */
+          margin-top:30%;
+        }
+       .top .top1 div{
+        line-height:2.5rem;
+        height:2.5rem;
+        /* border:1px solid #ff5777; */
+        text-align:center;
+        }
+        .top .top1>div:nth-of-type(3){
+          width:5rem;
+        }
+        p{
+          /* font-size:.1rem; */
+        }
+        .top .top1>div:nth-of-type(3)>a{
+          display:inline-block;
+          margin:0px auto;
+           border:none;
+          color:white;
+          background:#ff5777;
+          font-size:.7rem;
+          line-height:1.6rem;
+          height:1.6rem;
+          width:100%;
+          border-radius:1rem;
+        }
+        .xinghao,.xinghao+div{
+          line-height:1.5rem;
+          height:1.5rem;
+        }
+        .tab-1 .xinghao+div span:first-child,.tab-1 .xinghao+div span:last-child{
+          background:url(../image/zan.png) no-repeat left center;
+          padding-left:7%;
+          color:#999;
+          padding-left:6%;
+          margin-left:2%;
+        }
+        .tab-1 .xinghao+div span:last-child{
+          background:url(../image/pinglun.png) no-repeat left center;
+        }
+        .content2{
+          background:white;
+        }
+        .content2 .tab-1{
+          width:96%;
+          margin:0px auto;
+        }
+        .content2 .tab-1 .xiangqing{
+          line-height:1.5rem;
+          padding-top:2%;
+        }
+        .content2 .tab-1 .xiangqing>img{
+          width:20%;
+        }
+        .content2 .tab-1 .xiangqing div{
+          margin-left:2%;
+        }
+        .content2 .tab-1 .xiangqing div span:nth-of-type(2){
+          color:#ff5777;
+        }
+        .content2 .tab-1 .xiangqing span:last-child{
+          margin-right:2%;
+        }
+        .content2 .tab-1 .xinghao>div{
+          color:#999;
+        }
+        .content2+.tishi{
+          color:#999999;
+          line-height:2rem;
+          height:2rem;
+          background:#f2f2f2;
+          width:100%;
+          text-align:center;
+        }
+        .xian{
+          border-bottom:1px solid #f2f2f2;
+        }
+        .wupingjia{
+          margin-top:15%;
+        }
+        .wupingjia div{
+          text-align:center;
+        }
+        .wupingjia div span{
+          color:#999;
+          font-size:1rem;
+        }
+        .wupingjia div img{
+          width:40%;
+        }
+       .p1>img{
+          width:30%;
+        }

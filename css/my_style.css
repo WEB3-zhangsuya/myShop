@@ -1,0 +1,796 @@
+
+/* 登陆开始 */
+.login_content{
+    /* border:1px solid #ff5777; */
+    width: 80%;
+    margin-left: 10%;
+}
+.login_content h3{
+    font-size: 1.05rem;
+    color:#333;
+    text-align: center;
+    margin-top:30%;
+    margin-bottom: 15%;
+}
+.login_content input{
+    height:2.2rem;
+    line-height: 2.2rem;
+    width: 100%;
+    margin-bottom: 8%;
+    border-radius: 2.2rem;
+
+}
+.login_content li{
+    margin-bottom: 3%;   
+}
+.login_content li p{
+    /* display: none; */
+    padding-left: 20%;
+    font-size: .6rem;
+    height:1rem;
+    line-height: 1rem;
+    color: #ff5777;
+
+    /* border:1px solid #ccc;    */
+}
+
+
+
+.login_content li input{
+    margin-bottom: 1%;
+    box-sizing: border-box;
+    padding-left:20%;
+    padding-right: 15%;
+    border:1px solid #ccc;
+    
+}
+.login_content li:first-of-type input{
+    background: url("../image/icon_phone1.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.login_content li:last-of-type input{
+    background: url("../image/icon_lock1.png") no-repeat 10% center,url("../image/icon_pwhiden.png") no-repeat 92% center;
+    background-size: 6%,6%;
+}
+.login_content form>p{
+    padding: 0 3%;
+    margin-bottom: 5%; 
+}
+.login_content form>p input{
+    height:1rem;
+    line-height:1rem;
+    width: 1rem;
+    margin-top: 1%;
+    border-radius: 50%;
+    margin-right: 2%;
+    border: 1px solid #666;
+    background: white;
+    color: #ff5777;
+
+}
+.login_content form p span{
+    color:#555;
+    padding-left: 10%;
+    background-image: url("../image/选择 (4).png");
+    background-repeat: no-repeat;
+    background-position:left center; 
+    background-size: 24%;
+}
+.login_content form>input{    
+    border: none;
+    background: #ccc;
+    color: white;
+    font-size: 1.05rem;
+}
+.login_alert .login_confirm{
+    border-radius: 0 0 .8rem .8rem;
+    width: 100%;
+}
+/* 验证样式 */
+.login_content .abled{
+    background: #ff5777;
+    color: white;
+}
+.login_content li .outborder{
+    border-width: 0;
+    /* border-color: #ff5777; */
+    border:1px solid #ff5777; 
+    /* box-shadow: 0 0 5px #ff5777; */
+}
+.error{
+    background: url("../image/icon_warning.png") no-repeat 10% center;
+}
+.login_content li:first-of-type .outborder{
+    background: url("../image/icon_phone2.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.login_content li:last-of-type .outborder{
+    background: url("../image/icon_lock2.png") no-repeat 10% center,url("../image/icon_pwhiden.png") no-repeat 92% center;
+    background-size: 6%,6%;
+}
+/* 验证样式 */
+/* 登陆结束 */
+
+/* 短信快捷登陆开始 */
+.messige_login_content{
+    width: 80%;
+    margin-left: 10%;
+}
+.messige_login_content h3{
+    font-size: 1.05rem;
+    color:#333;
+    text-align: center;
+    margin-top:30%;
+    margin-bottom: 15%;   
+}
+.messige_login_content input{
+    height:2.2rem;
+    line-height: 2.2rem;
+    width: 100%;
+    margin-bottom: 1%;
+    border:1px solid #ccc;
+    border-radius: 2.2rem;
+}
+.messige_login_content li{
+    margin-bottom: 3%;
+}
+.messige_login_content li input{
+    box-sizing: border-box;
+    padding-left:20%;
+    padding-right: 10%;
+}
+.messige_login_content li p{
+    /* display: none; */
+    padding-left: 20%;
+    font-size: .6rem;
+    height:1rem;
+    line-height: 1rem;
+    color: #ff5777;
+
+    /* border:1px solid #ccc;    */
+}
+.messige_login_content li:first-of-type input{
+    background: url("../image/icon_phone1.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.messige_login_content li:last-of-type input:first-child{  
+    background: url("../image/icon_conform1.png") no-repeat 16% center;
+    background-size: 9%;
+    width: 63%;
+}
+.messige_login_content li:last-of-type input:last-child{
+    width: 35%;
+    background:white;
+    border: none;
+    color: #555;
+    /* margin-top: 4%; */
+    font-size: .8rem;
+    padding: 0;  
+}
+.messige_login_content form>input{
+    margin-top: 8%;
+    background: #ccc;
+    color: white;
+    font-size: 1.05rem;
+    border: none;
+}
+/* 验证样式 */
+.messige_login_content .abled{
+    background: #ff5777;
+    color: white;
+}
+.messige_login_content li .outborder{
+    border-width: 0;
+    /* border-color: #ff5777; */
+    border:1px solid #ff5777; 
+    /* box-shadow: 0 0 5px #ff5777; */
+}
+.error{
+    background: url("../image/icon_warning.png") no-repeat 10% center;
+}
+.messige_login_content li:first-of-type .outborder{
+    background: url("../image/icon_phone2.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.messige_login_content li:last-of-type .outborder{
+    background: url("../image/icon_conform2.png") no-repeat 16% center;
+    background-size: 9%;
+
+}
+/* 验证样式 */
+/* 短信快捷登陆结束 */
+
+/* 注册开始 */
+.register_content{
+    /* border:1px solid #ff5777; */
+    width: 80%;
+    margin-left: 10%;
+}
+.register_content h3{
+    font-size: 1.05rem;
+    color:#333;
+    text-align: center;
+    margin-top:30%;
+    margin-bottom: 15%; 
+}
+.register_content input{
+    height:2.2rem;
+    line-height: 2.2rem;
+    width: 100%;
+    margin-bottom: 1%;
+    border:1px solid #ccc;
+    border-radius: 2.2rem;
+}
+.register_content li{
+    margin-bottom: 3%;
+}
+.register_content li p{
+    /* display: none; */
+    padding-left: 20%;
+    font-size: .6rem;
+    height:1rem;
+    line-height: 1rem;
+    color: #ff5777;
+
+    /* border:1px solid #ccc;    */
+}
+.register_content li input{
+    box-sizing: border-box;
+    padding-left:20%;
+    padding-right: 15%;
+}
+.register_content li:first-of-type input{
+    background: url("../image/icon_phone1.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.register_content li:nth-of-type(2) input{
+    background: url("../image/icon_lock1.png") no-repeat 10% center,url("../image/icon_pwhiden.png") no-repeat 92% center;
+    background-size: 6%,6%;
+}
+.register_content li:last-of-type input{  
+    background: url("../image/icon_conform1.png") no-repeat 16% center;
+    background-size: 9%;
+    width: 63%;
+}
+.register_content li:last-of-type input:last-child{
+    width: 35%;
+    background:white;
+    border: none;
+    color: #555;
+    /* margin-top: 4%; */
+    font-size: .8rem;
+    padding: 0;  
+}
+
+.register_content>input{
+    background: #ccc;
+    color: white;
+    font-size: 1.05rem;
+    margin-top: 8%;
+}
+/* 验证样式 */
+.messige_login_content .abled{
+    background: #ff5777;
+    color: white;
+}
+.messige_login_content li .outborder{
+    border-width: 0;
+    /* border-color: #ff5777; */
+    border:1px solid #ff5777; 
+    /* box-shadow: 0 0 5px #ff5777; */
+}
+.error{
+    background: url("../image/icon_warning.png") no-repeat 10% center;
+}
+.messige_login_content li:first-of-type .outborder{
+    background: url("../image/icon_phone2.png") no-repeat 10% center;
+    background-size: 6%;
+}
+.messige_login_content li:last-of-type .outborder{
+    background: url("../image/icon_conform2.png") no-repeat 16% center;
+    background-size: 9%;
+
+}
+/* 验证样式 */
+/* 注册结束 */
+
+/* 忘记密码开始 */
+/* 忘记密码 */
+.phone_method{
+    margin-top: 13%;
+    width: 100%;
+    background: white;
+}
+.email_method{
+    width: 100%;
+    background: white; 
+    margin-top: 3%;   
+}
+.forget_password_content p{ 
+    margin: 0;  
+    color: #555;
+    padding: 3% 0;
+    padding-left: 2%;
+    border-bottom: 1px solid #f2f2f2;
+}
+.phone_method>input,.email_method>input{
+    width: 100%;
+    padding:3.5% 0;
+    margin-left: 5%;
+    border:none; 
+    border-bottom: 1px solid #f2f2f2; 
+}
+.phone_method>input:last-child,.email_method>input:last-child{ 
+    width: 90%;
+    margin: 6% auto;
+    margin-left: 5%; 
+    padding:2.5% 0;    
+    font-size: 1.05rem;
+    color:white;
+    border:none;
+    text-align: center;
+    background: rgb(245, 159, 159);
+    border-radius: 5px;
+}
+.phone_method>div input:first-child,.email_method>div input:first-child{
+    width: 60%;
+    padding:3.5% 0;
+    margin-left: 5%;
+    border:none; 
+    border-bottom: 1px solid #f2f2f2;
+}
+.phone_method>div input:last-child,.email_method>div input:last-child{
+    width: 30%;
+    padding:2% 0; 
+    margin: 1% 0;    
+    font-size: 1.05rem;
+    color:white;
+    border:none;
+    text-align: center;
+    background: rgb(245, 159, 159);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.phone_method>div:first-of-type input:last-child{
+    background: url("../image/img_identify.jpg") no-repeat center center;
+    background-size:100%;
+}
+.phone_method>div:last-of-type input:last-child{
+    background: #f2f2f2;
+    font-size: .5rem;
+    color: #999;
+    padding:3% 0;
+}
+.email_method>div:first-of-type input:last-child{
+    background: url("../image/img_identify.jpg") no-repeat center center;
+    background-size:90%;
+}
+/* 忘记密码 */
+/* 忘记密码结束 */
+
+/*无收藏内容*/
+.center{
+    margin-top: 15%;
+    background  :white;
+    padding-bottom:10%;
+}
+.center .collection_img{
+  width:100%;
+  padding-top: 30%;
+  text-align: center;
+  background: url("../image/bg_collection.png") no-repeat center 100%; 
+  background-size: 20%;
+}
+.center .text_none{
+    text-align: center;
+    color:#999;
+    font-size: .5rem;
+    margin-top: 2%;
+}
+/*无收藏内容*/
+
+/*有收藏内容*/
+/* 复选框 */
+.input_check {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid red;
+    visibility: hidden;
+}
+.collection_content ul {
+    position: relative;
+}
+.collection_content ul div{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.collection_content .choosecover{
+    background:  url("../image/选择 (7).png") no-repeat center center;  
+}
+.input_check+label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+/* 复选框 */
+.collection_content{
+    /* position: relative; */
+    overflow: auto;
+    height: 100%;
+    padding-bottom:15%;
+    padding-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.collection_content .hide{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,1); 
+    opacity: .2;
+    border-radius:5px;
+    display: none;
+}
+
+.collection_content ul{   
+    /* padding-top:1%; */
+    width: 47%;
+    /* flex: 6; */
+    float: left;
+    margin-left: 2%;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 2%;  
+    background :white;
+}
+.collection_content li:first-child{
+    text-align: center;
+    width: 100%;    
+}
+.collection_content li img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.collection_content li p{
+    font-size: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin:0 3%;
+    margin-bottom: 2%;
+}
+.collection_content li:nth-child(3) p{
+    color:#999;
+}
+.collection_content li:nth-child(4) p{
+    font-size: .8rem;
+    color:#ff5777;
+}
+.tishi{
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #ccc;
+    font-size: .8rem;
+}
+.delete{
+    
+    text-align: center;
+    position: fixed;
+    bottom:-2.5rem; 
+    font-size: .8rem;
+    color:#666;
+    width:100%;
+    padding: 3% 10%;
+    background: rgb(230, 230, 230) ; 
+}
+
+.delete_alert .cancel{
+    width:50%;
+    color:#999;
+    border-right: 1px solid #ccc;
+}
+.delete_alert .confirm{
+    width:50%;
+    color:#db394f;
+}
+/*有收藏内容*/
+/*发表评价*/
+.comment_content{
+    text-align: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:white;
+
+}
+.comment_box{
+    font-size: .8rem;
+    box-shadow: 0 0 6px #ccc;
+    border-radius:5px; 
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 13%;
+    /* height: 85%; */
+}
+.comment_box>img{
+    width:50%;
+}.comment_box p{
+    text-align: center;
+    margin:0 6%;
+    padding-bottom: 4%;
+    margin-bottom: 4%;
+    border-bottom: 1px solid #f2f2f2;
+}
+.comment_box p span{
+    display:inline-block;
+}
+.comment_box p span:first-child{
+    float: left;
+    padding-right:7%;
+    width: 68%;
+    overflow: hidden;/*内容超出后隐藏*/
+    text-overflow: ellipsis;/* 超出内容显示为省略号*/
+    white-space: nowrap;/*文本不进行换行*/
+}
+.comment_box p span:last-child{
+    float: right;
+}
+.comment_box .hide_name{
+    width: 88%;
+    margin-left: 6%;
+    margin-bottom: 4%;
+}
+.comment_box .hide_name span{
+    /* border: 1px solid #ff5777; */
+    float: left;
+    padding: 1% 0;
+    padding-left: 10%;
+    background: url("../image/icon_choose_all.png") no-repeat left center;
+    background-size: 25%;
+}
+.comment_box textarea{
+    box-sizing: border-box;
+    padding: 1% 2%;
+    border: 1px solid #f2f2f2;
+    width: 88%;
+}
+.comment_box ul{  
+ 
+    margin-left: 6%;
+    /* border: 1px solid #ff5777; */
+    margin-bottom:2%;
+}
+.comment_box li{
+    float: left;
+    padding:5% 0;
+    height:20%;
+    line-height: 20%;
+    /* border: 1px solid #ff5777;   */
+}
+.comment_box li:nth-child(1){
+    /* margin-right: 5%; */
+    width:25%;
+}
+.comment_box li:nth-child(n+2){
+    background: url("../image/icon_good.png") no-repeat center center;
+    background-size: 65%;
+    width: 12%;
+}
+.comment_box .final_comment{
+    font-size: .8rem;
+    color:#f5ca04;
+}
+.comment_box input{
+    font-size: 1.05rem;
+    color: white;
+    border: none;
+    background: #db394f;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    margin-top: 6%;
+    margin-bottom: 10%;
+
+}
+/*发表评价*/
+
+/*评价完成*/
+.comment_finish{
+    margin-top: 16%;
+    background  :white;
+    width: 100%;
+    padding-bottom: 10%;
+}
+.comment_finish .comment_bgcontent{
+  width:100%;
+  padding-top: 30%;
+  text-align: center;
+  background: url(../image/bg_finish.png) no-repeat center 100%; 
+  background-size: 14%;
+}
+.comment_finish .bg_text{
+    margin-top: 2%;
+    text-align: center;
+    color:#db394f;
+}
+/*评价完成*/
+
+/* 我的 */
+.me_page span{
+    color:#ff5777;
+}
+.content_page{
+    font-size: .8rem;
+    /* padding-bottom: 1rem; */
+}
+.content_page a{
+    display: block;
+    color:#555;
+}
+.content_page li a{
+    width: 100%;
+    height: 100%;
+    color:#999;
+    display: block;
+    color:#555;   
+}
+.content_page li{
+    display: block;
+    float: left;
+}
+.my_page_top{
+    width: 100%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    background:url("../image/bg_my_pagetop.jpg") no-repeat center center ;
+    background-size: 120%;
+}
+.user_info{
+    padding-left: 4%;
+    width: 100%;
+}
+.user_photo{
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 50%;
+    background:url("../image/user_photo.jpg");
+    background-size: 100%;
+}
+.user_text{
+    margin-left: 3%;
+    margin-top:4%;
+
+}
+.my_page_top ul{
+    width: 100%;
+    margin-top:8%;
+}
+.my_page_top li{
+    width: 20%;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: 10%;
+    /* border: 1px solid #ff5777; */
+    text-align: right;
+}
+.my_page_top li:first-child a{
+    background: url("../image/晒单.png") no-repeat 20% center; 
+}
+.my_page_top li:nth-child(2) a{
+    background: url("../image/收 藏.png") no-repeat 20% center; 
+}
+.my_page_top li:nth-child(3) a{
+    background: url("../image/分享 .png") no-repeat 20% center; 
+}
+.goods_all{
+    width: 100%;
+    background: white;
+    /* margin-top: 3%; */
+}
+
+.my_goods,.my_pingjia{
+    display: block;
+     padding: 0 3%;
+     height: 2.5rem;
+    line-height: 2.5rem; 
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+}
+.goods_process li span{
+
+    color:white;
+    font-size: .6rem;
+    display: block;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    background: #ff5777;
+    border-radius: 50%;
+    position: absolute;
+    right:1.4rem;
+    top:.7rem;
+}
+.goods_process li,.my_others li{
+    position: relative;
+    width: 25%;
+    text-align: center;     
+}
+.goods_process li a,.my_others li a{
+    width: 100%;
+    height: 100%;
+    padding-bottom: .5rem;
+    padding-top: 2.4rem;
+    /* border: 1px solid #ff5777;  */
+}
+.goods_process li:first-child a{
+    background: url("../image/代付款 .png") no-repeat center .7rem; 
+}
+.goods_process li:nth-child(2) a{
+    background: url("../image/待发货 .png") no-repeat center .7rem; 
+}
+.goods_process li:nth-child(3) a{
+    background: url("../image/待收货.png") no-repeat center 1rem; 
+}
+.goods_process li:nth-child(4) a{
+    background: url("../image/待评论.png") no-repeat center 1rem; 
+}
+.my_others li:first-child a{
+    background: url("../image/收货地址.png") no-repeat center 1rem; 
+}
+.my_others li:nth-child(2) a{
+    background: url("../image/-安全中心 .png") no-repeat center 1rem; 
+}
+.my_others li:nth-child(3) a{
+    background: url("../image/帮助中心 .png") no-repeat center 1rem; 
+}
+.my_others li:nth-child(4) a{
+    background: url("../image/联系客服 .png") no-repeat center 1rem; 
+}
+.my_pingjia{
+    background: white;
+    margin: 6% 0;   
+}
+.my_others{
+    margin-bottom: 4rem;
+    background: white;
+}
+.kefu_alert .cancel{
+    color:#db394f;
+    width: 50%;
+    border-right: 1px solid #ccc;
+    border-radius: 0 0 0 .8rem;
+}
+.kefu_alert .confirm{
+    width: 50%;
+    color:#db394f;
+    border-radius: 0 0 .8rem 0 ;
+}
+
+/* 我的 */
