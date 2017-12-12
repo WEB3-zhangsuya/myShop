@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>我的生活</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/sm2.css">
+		<link rel="stylesheet" href="css/sm-extend.css">
+		<script type="text/javascript" src="js/zepto.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/sm.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/sm-extend.js" charset="utf-8"></script>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.clearfix {
+				*zoom: 1;
+			}
+			
+			.clearfix:after {
+				display: table;
+				clear: both;
+				content: "";
+			}
+			
+			.content-block {
+				margin-top: -1%;
+				width: 100%;
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.content {
+				background: white;
+			}
+			
+			.top {
+    height: 0.1rem;
+    margin: 0px auto;
+    line-height: 1.2rem;
+    margin-top: 6%;
+    height: 6%;
+    text-align: center;
+    width: 96%;
+    display: flex;
+    justify-content: space-around;	
+			}			
+			.top a{
+				font-size: 100%;
+				font-weight: lighter;
+				font-weight: 300;
+				margin:0 4%;	
+				color: #666666;									
+			}		
+            .top a:nth-child(2){
+            	color: #e4393c;
+            	font-weight:550;
+            }							
+			.sousuo input {
+				width: 80%;
+				height: 1.4rem;
+				border-radius: .2rem;
+				background: #f7f7f7 url("img/搜索.png") no-repeat 4% center;
+				outline: none;
+				border: none;
+				font-size: 0.6rem;
+				font-weight: lighter;
+				color: #666666;
+				padding-left: 8%;
+				background-size: 5%;
+				box-sizing: border-box;
+			}
+			
+			.sousuo {
+				margin-top: 1%;
+				text-align: center;
+			}
+			
+			.banner img {
+				margin-top: .2rem;
+				width: 100%;
+			}
+			
+			.banner2 {
+				height: 1.6rem;
+				background: url("img/首页_04.gif") no-repeat center;
+				width: 100%;
+				margin-top: 2%;
+				background-size: cover;
+				margin-bottom: 1.6rem;
+			}
+			
+			.banner2 span {
+				font-size: 0.8rem;
+				color: #515151;
+				margin-left:40%;
+				text-align: center;
+				line-height: 1.8rem;
+			}
+						
+			.banner2 a {
+				text-decoration: none;
+				color: #515151;
+			}
+			
+			.zuoTu {
+				margin-left: .6rem;
+				width: 45%;
+				margin-top: -1.2rem;
+				border-radius: 0.3rem;
+				box-shadow: 0 0 .2rem #cccccc;
+			}
+			
+			.zuoTu2 {
+				margin-left: .6rem;
+				width: 45%;
+				margin-top: .3rem;
+				border-radius: 0.3rem;
+				box-shadow: 0 0 .2rem #cccccc;
+			}
+			
+			.youTu {
+				margin-right: .6rem;
+				width: 45%;
+				margin-top: -1.2rem;
+				border-radius: 0.3rem;
+				box-shadow: 0 0 .2rem #cccccc;
+			}
+			
+			.youTU2 {
+				margin-right: .6rem;
+				width: 45%;
+				margin-top: .3rem;
+				border-radius: 0.3rem;
+				box-shadow: 0 0 .2rem #cccccc;
+			}
+			
+			.meirongHuFu img {
+				width: 80%;
+				text-align: center;
+			}
+			
+			.zuoWenZiMiaoSu {
+				border-top: 0.05rem solid #e5e5e5;
+				padding-top: 0.5rem;
+				padding-bottom: 0.1rem;
+			}
+			
+			.zuoWenZiMiaoSu p {
+			
+			   overflow:hidden;
+               word-break:keep-all;
+               white-space:nowrap;
+               text-overflow:ellipsis;
+               text-align: center;
+			}
+			
+			.zuoWenZiMiaoSu p:nth-child(1) {
+				font-size: 0.7rem;
+				color: #333333;
+			}
+			
+			.zuoWenZiMiaoSu p:nth-of-type(n+1)~p:nth-of-type(-n+3) {
+				font-size: 0.6rem;
+				color: #515151;
+			}
+			
+			.zuoWenZiMiaoSu p:nth-child(4) {
+				text-decoration: line-through;
+				font-size: 0.6rem;
+				color: #adadad;
+			}
+			
+			.zuoWenZiMiaoSu p:nth-child(5) {
+				font-size: 1rem;
+				color: #db394f;
+			}
+			
+			.meirongHuFu img {
+				width: 80%;
+				margin-left: 0.6rem;
+				margin-top: 0.5rem;
+			}
+			
+			.youWenZiMiaoSu {
+				border-top: 0.05rem solid #e5e5e5;
+				padding-top: 0.5rem;
+				padding-bottom: 0.1rem;
+			}
+			
+			.youWenZiMiaoSu p {
+			   overflow:hidden;
+               word-break:keep-all;
+               white-space:nowrap;
+               text-overflow:ellipsis;
+               text-align: center;
+			}
+			
+			.youWenZiMiaoSu p:nth-child(1) {
+				font-size: 0.7rem;
+				color: #333333;
+			}
+			
+			.youWenZiMiaoSu p:nth-of-type(n+1)~p:nth-of-type(-n+3) {
+				font-size: 0.6rem;
+				color: #515151;
+			}
+			
+			.youWenZiMiaoSu p:nth-child(4) {
+				text-decoration: line-through;
+				font-size: 0.6rem;
+				color: #adadad;
+			}
+			
+			.youWenZiMiaoSu p:nth-child(5) {
+				font-size: 1rem;
+				color: #db394f;
+			}
+			
+
+			.tuijian{
+				width: 100%;
+				text-align: center;
+			}
+			.tuijian img{
+				padding-bottom:.2rem ;
+				width: 80%;
+				text-align: center;
+				margin-top:1% ;
+			}
+			.tuijian_img{
+				text-align: center;
+			}
+			.tuijian_img img{
+				width: 90%;
+			}				
+			.tui1{
+                margin-left:2.5% ;
+				font-size: .6rem;
+				width: 30%;
+				text-align: center;	
+				box-shadow: 0 0 0.2rem #cccccc;				
+			}	
+			.tui1 img{
+				margin-top:.5rem ;
+			}	
+			.tuijian_p p{
+               overflow:hidden;
+               word-break:keep-all;
+               white-space:nowrap;
+               text-overflow:ellipsis;
+               width: 100%;
+               }
+               .tuijian_p p:nth-child(2){
+               	text-decoration:line-through;
+               	color: #999999;
+               }
+               .tuijian_p p:nth-child(3){
+               	color: #e4393c;
+               	font-size: .8rem;
+               }
+               .tuijian_p{
+               	border-top: 0.05rem solid #e5e5e5
+               }             
+		</style>
+	</head>
+
+	<!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+	<div class="page-group">
+		<!-- 单个page ,第一个.page默认被展示-->
+		<div class="page">
+			<!-- 标题栏 -->
+			<header class="bar bar-nav">
+
+				<h1 class="title">海外直购</h1>
+				<a class="icon icon-me pull-right open-panel"></a>
+			</header>
+
+			<!-- 工具栏 -->
+			<nav class="bar bar-tab">
+				<a class="tab-item external active" href="1.html">
+					<span class="icon icon-home"></span>
+					<span class="tab-label">首页</span>
+				</a>
+				<a class="tab-item external" href="1.html">
+					<span class="icon icon-app"></span>
+					<span class="tab-label">分类</span>
+				</a>
+				<a class="tab-item external" href="cart.html">
+					<span class="icon icon-cart"></span>
+					<span class="tab-label">购物车</span>
+				</a>
+				<a class="tab-item external" href="#">
+					<span class="icon icon-me"></span>
+					<span class="tab-label">我的</span>
+				</a>
+			</nav>
+
+			<!-- 这里是页面内容区 -->
+			<div class="content">
+				<div class="content-block">
+					<div class="box clearfix">
+						<div class="top  clearfix"">	
+								<a href="#" class="fl">首页</a>
+								<a name="f1" class="fl">美容</a>
+								<a href="#" class="fl">家居</a>
+								<a href="#" class="fl">数码</a>
+								<a href="#" class="fl">零食</a>
+						</div>
+						<div class="banner"><img src="img/banner03.webp" /></div>
+						<div class="tuijian_box">
+						<div class="tuijian">
+							<img src="img/今日推荐.png">
+						</div>
+						<div class="tuijian_img clearfix">
+							<div class="tui1 fl">
+							<img src="img/jintituijian.png">
+							<div class="tuijian_p">
+							<p>肌美精 超级渗透3D补水美白面膜</p>
+							<p>参考价  ¥136.00</p>
+							<p>¥75.00</p>
+							</div>												
+							</div>
+							
+							<div class="tui1 fl">
+							<img src="img/jintituijian2.png">
+							<div class="tuijian_p">
+							<p>Kracie 嘉娜宝 肌美精 药用抹茶祛痘保湿面膜 15毫升/片 5片装</p>
+							<p>参考价  ¥166.00</p>
+							<p>¥89.00</p>
+							</div>
+							</div>
+							
+							<div class="tui1 fl">
+							<img src="img/jintituijian3.png">
+							<div class="tuijian_p">
+							<p>KOSÉ 高丝 传明酸美白淡斑保湿面膜 22毫升 5片装</p>
+							<p>参考价  ¥98.00</p>
+							<p>¥46.00</p>
+							</div>
+							</div>
+						</div>
+						</div>
+						
+						<div class="banner2 clearfix">
+							<span><a href="#f1">美容护肤</a></span>
+			            </span>
+						</div>
+						<div class="meirongHuFu clearfix">
+							<div class="zuoTu fl">
+								<img src="img/555.jpg" />
+								<div class="zuoWenZiMiaoSu">
+									<p>日系热销面膜</p>
+									<p>让肌肤“童颜化”的面膜</p>
+									<p>6盒装</p>
+									<p>参考价：¥590.00</p>
+									<p>¥279.00</p>
+								</div>
+
+							</div>
+							<div class="youTu fr">
+								<img src="img/666.jpg" />
+								<div class="youWenZiMiaoSu">
+									<p>冻干絮面膜</p>
+									<p>人体干细胞培养液</p>
+									<p>3片/盒装</p>
+									<p>参考价：¥450.00</p>
+									<p>¥359.00</p>
+								</div>
+							</div>
+
+							<div class="zuoTu2 fl">
+								<img src="img/555.jpg" />
+								<div class="zuoWenZiMiaoSu">
+									<p>日系热销面膜</p>
+									<p>让肌肤“童颜化”的面膜</p>
+									<p>6盒装</p>
+									<p>参考价：¥590.00</p>
+									<p>¥279.00</p>
+								</div>
+							</div>
+							<div class="youTU2 fr">
+								<img src="img/666.jpg" />
+								<div class="youWenZiMiaoSu">
+									<p>冻干絮面膜</p>
+									<p>人体干细胞培养液</p>
+									<p>3片/盒装</p>
+									<p>参考价：¥450.00</p>
+									<p>¥359.00</p>
+								</div>
+							</div>
+							
+							<div class="zuoTu2 fl">
+								<img src="img/555.jpg" />
+								<div class="zuoWenZiMiaoSu">
+									<p>日系热销面膜</p>
+									<p>让肌肤“童颜化”的面膜</p>
+									<p>6盒装</p>
+									<p>参考价：¥590.00</p>
+									<p>¥279.00</p>
+								</div>
+							</div>
+							<div class="youTU2 fr">
+								<img src="img/666.jpg" />
+								<div class="youWenZiMiaoSu">
+									<p>冻干絮面膜</p>
+									<p>人体干细胞培养液</p>
+									<p>3片/盒装</p>
+									<p>参考价：¥450.00</p>
+									<p>¥359.00</p>
+								</div>
+							</div>							
+							<div class="zuoTu2 fl">
+								<img src="img/555.jpg" />
+								<div class="zuoWenZiMiaoSu">
+									<p>日系热销面膜</p>
+									<p>让肌肤“童颜化”的面膜</p>
+									<p>6盒装</p>
+									<p>参考价：¥590.00</p>
+									<p>¥279.00</p>
+								</div>
+							</div>
+							<div class="youTU2 fr">
+								<img src="img/666.jpg" />
+								<div class="youWenZiMiaoSu">
+									<p>冻干絮面膜</p>
+									<p>人体干细胞培养液</p>
+									<p>3片/盒装</p>
+									<p>参考价：¥450.00</p>
+									<p>¥359.00</p>
+								</div>
+							</div>
+						</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</html>
